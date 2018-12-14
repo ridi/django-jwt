@@ -1,0 +1,4 @@
+-r base.txt
+
+pylint==1.8.1
+flake8==3.5.0

@@ -1,0 +1,11 @@
+*.pyc
+.idea/
+logs/
+reports/
+.coverage
+.cache/
+.version
+ssl/
+
+# Node
+node_modules/
