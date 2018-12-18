@@ -9,7 +9,7 @@ env:
   - DJANGO_VERSION=<1.10
   - DJANGO_VERSION=<1.11
 install:
-  - pip install -r requirements.txt/test
+  - pip install -r requirements.txt/test.txt
   - pip install -q Django$DJANGO_VERSION
 script:
   - python -m pytest test --cov=ridi
