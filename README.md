@@ -47,3 +47,9 @@ class IndexView(JWTRequiredMixin, TemplateView):
 ## API
 
 TBA
+
+## Todo
+
+- [ ] Provide authentication middleware
+- [ ] Add unit tests
+- [ ] Integrate with travis-ci
