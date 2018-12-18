@@ -10,9 +10,12 @@ def verify_jwt_token(token):
     # get payload from token, BEFORE verification, to get individual secret key
     unverified_payload = jwt.decode(token, None, False)
 
-    issuer = unverified_payload.get('iss')
     options = {'verify_exp': CONNECT_ARGS.verify_expiration}
     options.update(CONNECT_ARGS.decode_options)
+
+    issuer = CONNECT_ARGS.issuer
+    if callable(issuer):
+        issuer = issuer(unverified_payload)
 
     key = CONNECT_ARGS.key
     if callable(key):
