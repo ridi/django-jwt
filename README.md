@@ -1,5 +1,10 @@
 # django-jwt
 
+[![Build Status](https://travis-ci.com/ridi/django-jwt.svg?branch=master)](https://travis-ci.com/ridi/django-jwt)
+[![PyPI](https://img.shields.io/pypi/v/ridi-django-jwt.svg)](https://pypi.org/project/ridi-django-jwt/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ridi-django-jwt.svg)](https://pypi.org/project/ridi-django-jwt/)
+[![Coverage Status](https://coveralls.io/repos/github/ridi/django-jwt/badge.svg?branch=master)](https://coveralls.io/github/ridi/django-jwt?branch=master)
+
 Provides JSON Web Token based authentication for RIDI's micro services made with django
 
 
