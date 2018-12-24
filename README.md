@@ -56,5 +56,5 @@ TBA
 ## Todo
 
 - [ ] Provide authentication middleware
-- [ ] Add unit tests
-- [ ] Integrate with travis-ci
+- [x] Add unit tests
+- [x] Integrate with travis-ci
