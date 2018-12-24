@@ -9,3 +9,8 @@ ssl/
 
 # Node
 node_modules/
+
+# pypi
+dist/
+build/
+*.egg-info/

@@ -1,7 +1,7 @@
 import os
 import re
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 with open('requirements/base.txt') as f:
     install_requires = [line for line in f if line and not line.startswith('-')]
@@ -18,9 +18,6 @@ def get_version(package):
 
 setup(
     name='ridi-django-jwt',
-    packages=[
-        'ridi.django_jwt',
-    ],
     version=get_version('ridi/django_jwt'),
     description='JSON Web Token based authentication for RIDI\'s django services',
     url='https://github.com/ridi/django-jwt',
@@ -43,10 +40,9 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Topic :: Internet :: WWW/HTTP',
     ],
+    packages=[
+        'ridi.django_jwt'
+    ],
     install_requires=install_requires,
-    entry_points={
-        'console_scripts': [
-            'secret-keeper = ridi.secret_keeper.cmdline:main'
-        ]
-    },
+    include_package_data=True,
 )
